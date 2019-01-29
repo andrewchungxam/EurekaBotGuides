@@ -7,7 +7,7 @@ When you've completed this tutorial, you should expect to see this:
 
 ### Section 1: Modify the .bot Configuration File
 
-The .bot file contains configuration data about your bot and the services it uses. It contains the development and production endpoints, the bot app ID and password to connect to the Bot Connector Service, and endpoints, keys and other settings used by other cognitive services.
+[The .bot file](https://docs.microsoft.com/en-us/azure/bot-service/bot-file-basics) contains configuration data about your bot and the services it uses. It contains the development and production endpoints, the bot app ID and password to connect to the Bot Connector Service, and endpoints, keys and other settings used by other cognitive services.
 
 The .bot file is used in a few different ways. It's what the Bot Framework Emulator uses to connect to your bot locally and publicly. It's also used in `ConfigureServices` method in the `Startup` class of our .NET Core bot to read in the endpoints, keys, etc for cognitive services used within the bot, such as Translation, Spell Check, QnA Maker and LUIS.
 
