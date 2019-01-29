@@ -1,4 +1,4 @@
-# Azure Bot Framework - Bare Minimum
+# Azure Bot Framework - Web App Bot Resources
 
 ### This guide will help you establish the basics of standing up the minimum necessary resources in Azure to get a simple bot running. We call it the Echo Bot because it echoes back the text input by the user. 
 
