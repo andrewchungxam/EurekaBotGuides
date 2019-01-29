@@ -7,7 +7,9 @@ When you've completed this tutorial, you should expect to see this:
 
 ### What is Middleware?
 
-Middleware is a new concept in Bot Framework v4 and is aimed at making it very easy to splice intelligent layers into your bot. Middleware will will execute in the order added in the `Startup.cs` file both up and down the middleware stack. Examples of middleware are translation, spell-check, logging and natural language entity extraction. For additional information on how middleware works, check out the [docs here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware).
+Middleware is a new concept in Bot Framework v4 and is aimed at making it very easy to splice intelligent layers into your bot. Middleware will will execute in the order added in the `Startup.cs` file both up and down the middleware stack.
+
+Examples of middleware uses are translation, spell-check, logging and natural language entity extraction. For additional information on how middleware works, check out the [docs here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware).
 <br/><img src="https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/bot-builder-dialog-state-problem.png?view=azure-bot-service-4.0" />
 
 
