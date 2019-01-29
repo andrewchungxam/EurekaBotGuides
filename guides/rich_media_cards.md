@@ -12,4 +12,25 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 ### Section 1: Greet the user with a rich media card
 
-1. Coming soon...
+1. Create a new folder in the root of your project called `Cards`
+
+1. We can greet the user by sending them a welcome message - add the following code into the `switch (turnContext.Activity.Type)` statement:
+	```
+	case ActivityTypes.ConversationUpdate:
+
+		if (turnContext.Activity.MembersAdded != null)
+		{
+			var reply = turnContext.Activity.CreateReply();
+			reply.Attachments.Add(new WelcomeCard(_configuration).ToAttachment());
+
+			foreach (var newMember in turnContext.Activity.MembersAdded)
+			{
+				if (newMember.Id != turnContext.Activity.Recipient.Id)
+				{
+					await turnContext.SendActivityAsync(reply);
+				}
+			}
+		}
+
+		break;
+	```

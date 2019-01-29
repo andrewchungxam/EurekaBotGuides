@@ -23,9 +23,13 @@ Azure Cosmos DB provides native support for NoSQL and OSS APIs including MongoDB
 
 ### Section 1: Add in `ConversationLogger` Middleware
 
-1. Let's get the conversation logger to write history to the console first by adding [this file](https://gist.github.com/rob-derosa/6fe64f426a785eca41a00e461ab4652e) to our project in a new folder called `Middleware`
+1. Create a new folder in the root of your project called `Middleware`
 
-1. Open up the file `EurekaBot\Middleware\ConversationLogger.cs` and read the comments to understand the flow of how middleware will process the incoming message from the user as well as the outgoing message from the bot
+1. Create a new file called `ConversationLogger.cs` to the `Middleware` folder that was created in the previous step
+
+1. Add the contents of [this file](https://gist.github.com/rob-derosa/6fe64f426a785eca41a00e461ab4652e) to `ConversationLogger.cs`
+
+1. Open up the `ConversationLogger.cs` file and read the comments to understand the flow of how middleware will process the incoming message from the user as well as the outgoing message from the bot
 
 1. Now that we have middleware in our project, we need to add it to the startup process - open the `Startup.cs` file and add the following line of code just after setting the `options.OnTurnError` property delegate, within the `services.AddBot` delegate body:
 	```
