@@ -18,7 +18,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 
 <br />
 
-## Section 1: Create the QnA Maker Services in Azure Portal
+### Section 1: Create the QnA Maker Services in Azure Portal
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and log in
 
@@ -60,7 +60,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 	 
 <br/>
 
-## Section 2: Create a Knowledge Base in the QnA Maker Portal
+### Section 2: Create a Knowledge Base in the QnA Maker Portal
 
 1. Browse to [https://qnamaker.ai](https://qnamaker.ai) and log in with the same credentials used in Section 1
 
@@ -89,7 +89,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 
 <br/>
 
-## Section 3: Train, Test and Publish the Knowledge Base  
+### Section 3: Train, Test and Publish the Knowledge Base  
 
 1. Before the knowledge base can be used, we need to save and train the model first - click the __Save and Train__ button at the top 
 <br /><img src="../screens/save_and_train_button.jpg" width="80%" />

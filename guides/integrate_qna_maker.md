@@ -188,4 +188,4 @@ Now that we have a working public endpoint, we can add enable one of the several
 1. Ask a question and verify the appropriate answer is returned by the bot
 <br/><img src="../screens/embedded_web_chat_qna.jpg" />
 
-1. Commit and push your code to your repository to trigger a build and deploy in Azure, then retest against your public endpoint
+1. Commit and push your code to your repository to trigger a build and deploy in Azure, then re-test against your public endpoint
