@@ -1,6 +1,6 @@
 # Azure Bot Framework - Conversation Logger as Middleware
 
-### This guide will help you get going with sending the user a greeting card. You will also learn how to integrate custom middleware to log conversations to a Cosmos database.
+### This guide will help you integrate custom middleware to log conversations to a Cosmos database.
 
 When you've completed this tutorial, you should expect to see this:
 <br/><img src="../screens/cosmos_data_explorer_confirm_save.jpg" /><br/><br/>
