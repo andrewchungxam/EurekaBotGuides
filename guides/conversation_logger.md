@@ -1,9 +1,16 @@
-# Azure Bot Framework - Rich Media Cards and Conversation Logger
+# Azure Bot Framework - Conversation Logger as Middleware
 
 ### This guide will help you get going with sending the user a greeting card. You will also learn how to integrate custom middleware to log conversations to a Cosmos database.
 
 When you've completed this tutorial, you should expect to see this:
 <br/><img src="../screens/cosmos_data_explorer_confirm_save.jpg" /><br/><br/>
+
+### What is Middleware?
+
+Middleware is a new concept in Bot Framework v4 and is aimed at making it very easy to splice intelligent layers into your bot. Middleware will will execute in the order added in the `Startup.cs` file both up and down the middleware stack. Examples of middleware are translation, spell-check, logging and natural language entity extraction. For additional information on how middleware works, check out the [docs here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware).
+
+<br/><img src="https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/bot-builder-dialog-state-problem.png?view=azure-bot-service-4.0" width="60% />
+
 
 ### What is Cosmos DB?
 
@@ -14,8 +21,6 @@ Azure Cosmos DB provides native support for NoSQL and OSS APIs including MongoDB
 <br />
 
 ### Section 1: Add in `ConversationLogger` Middleware
-
-Middleware is a new concept in Bot Framework v4 and is aimed at making it very easy to splice intelligent layers into your bot. Middleware will will execute in the order added in the `Startup.cs` file both up and down the middleware stack. Examples of middleware are translation, spell-check, logging and natural language entity extraction. For additional information on how middleware works, check out the [docs here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-middleware).
 
 1. Let's get the conversation logger to write history to the console first by adding [this file](https://gist.github.com/rob-derosa/6fe64f426a785eca41a00e461ab4652e) to our project in a new folder called `Middleware`
 
