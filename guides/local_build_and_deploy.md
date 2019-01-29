@@ -25,20 +25,21 @@ When you've completed this tutorial, you should expect to see this:
 
 1. Clone [this repository](https://github.com/rob-derosa/EurekaBot) `git clone https://github.com/rob-derosa/EurekaBot.git`
 
-1. In VS Code, open the project located at `src/start_here/EurekaBot` - this will be our baseline for our QnA Bot
+1. In VS Code, open the project located at `src/start_here/EurekaBot` - this will be our baseline for our QnA bot
 
 1. Copy the .bot file in the bot source code you download in the previous step into the root of this project
     - the .bot file contains several configuration keys needed by the bot to run
 
 1. In the `appsettings.json` file, specify the path to the `.bot` file you just copied over as well as the bot file secret
     - you can find the bot file path and secret in the Application Settings of web bot in the Azure Portal
-<br/><img src="../screens/application_settings_bot_info.jpg" />
+	<br/><img src="../screens/application_settings_bot_info.jpg" />
+	example:
+	```
+	"botFilePath": "./EurekaChatBot.bot",
+	"botFileSecret": "RLhkzCUeiwHGluudy7Ny5SGEzaVmHkalBRJXSGECVM=",
+	```
 
-example:
-```
-"botFilePath": "./EurekaChatBot.bot",
-"botFileSecret": "RLhkzCUeiwHGluudy7Ny5SGEzaVmHkalBRJXSGECVM=",
-```
+1. Open the `Bot.cs` file and check out the code, specifically the `OnTurnAsync` method and the `TurnContext` object - this is where your bot gets the opportunity to determine the `ActivityType` and act accordingly (i.e. `Message`, `ConversationUpdate`, `EndConversation`, `Typing`, etc)
 
 1. In VS Code, open the terminal (__Terminal > New Terminal__) and type `dotnet build` and ensure there are no build errors
 
