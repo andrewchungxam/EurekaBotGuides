@@ -3,7 +3,7 @@
 ### This guide will help you get going rich media cards so you can add some flare to your bot responses
 
 When you've completed this tutorial, you should expect to see this:
-<br/><img src="../screens/" /><br/><br/>
+<br/>...image forthcoming...
 
 ### What are [rich media cards](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp)?
 
