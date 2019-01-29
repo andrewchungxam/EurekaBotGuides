@@ -14,7 +14,7 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 1. Create a new folder in the root of your project called `Cards`
 
-1. Add [this code](https://raw.githubusercontent.com/rob-derosa/EurekaBot/master/src/end_here/EurekaBot/Cards/WelcomeCard.cs) to a new file called `WelcomCard.cs` to the `Cards` folder you created in the previous step
+1. Add [this code](https://raw.githubusercontent.com/rob-derosa/EurekaBot/master/src/end_here/EurekaBot/Cards/WelcomeCard.cs) to a new file called `WelcomeCard.cs` to the `Cards` folder you created in the previous step
 
 1. We can greet the user by sending them a welcome message - in the `Bot.cs` file, add the following code into the `switch (turnContext.Activity.Type)` statement:
 	```
