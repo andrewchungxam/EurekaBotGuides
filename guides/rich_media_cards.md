@@ -42,3 +42,8 @@ Messages exchanged between user and bot can contain media attachments, such as i
 
 1. Run this bot locally and test it out in the Bot Framework Emulator - you should be greeted by the bot with a video card
 <br/><img src="../screens/bot_framework_emulator_media_card.jpg" />
+
+1. Once woring locally, commit and push your code to trigger a deployment, then test it out using the Bot Framework Emulator with the __production__ endpoint selected
+
+	note - the Web Chat will not automatically trigger the `ConversationUpdate` activity to be invoked like the Bot Framework Emulator does so you will need to send a message first to the bot before it will respond with a media card
+
