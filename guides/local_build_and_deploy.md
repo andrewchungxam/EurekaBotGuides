@@ -31,7 +31,7 @@ When you've completed this tutorial, you should expect to see this:
     - the .bot file contains several configuration keys needed by the bot to run
 
 1. In the `appsettings.json` file, specify the path to the `.bot` file you just copied over as well as the bot file secret
-    - you can find the bot file path and secret in the Application Settings of web bot in the Azure Portal
+    - you can find the bot file path and secret in the __Application settings__ of web bot in the Azure Portal
 	<br/><img src="../screens/application_settings_bot_info.jpg" />
 	example:
 	```

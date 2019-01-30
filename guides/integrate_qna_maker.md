@@ -11,7 +11,7 @@ When you've completed this tutorial, you should expect to see this:
 
 The .bot file is used in a few different ways. It's what the Bot Framework Emulator uses to connect to your bot locally and publicly. It's also used in `ConfigureServices` method in the `Startup` class of our .NET Core bot to read in the endpoints, keys, etc for cognitive services used within the bot, such as Translation, Spell Check, QnA Maker and LUIS.
 
-Because the .bot file contains sensitive information, it should be encrypted using a secret. Both the .bot file path and the secret are defined in the `appsettings.json` file locally and in the Application Settings of the App Service in the Azure Portal.
+Because the .bot file contains sensitive information, it should be encrypted using a secret. Both the .bot file path and the secret are defined in the `appsettings.json` file locally and in the __Application settings__ of the App Service in the Azure Portal.
 
 We need to add the QnA Maker endpoint key, host and knowledge base ID to the .bot file which we'll later read in and use. But because the .bot file is encrypted, we first need to decrypt it using the [__msbot__]((https://github.com/Microsoft/botbuilder-tools/tree/master/packages/MSBot#installation)) command line tool.
 
@@ -130,7 +130,7 @@ We need to add the QnA Maker endpoint key, host and knowledge base ID to the .bo
 	Please save this secret in a secure place to keep your keys safe.
 	```
 
-1. Copy the new key that was generated to somewhere safe - you'll need to enter it into the Bot Framework Emulator again as well as the `appsettings.json` file to test locally and modify the Application settings of our App Service
+1. Copy the new key that was generated to somewhere safe - you'll need to enter it into the Bot Framework Emulator again as well as the `appsettings.json` file to test locally and modify the __Application settings__ of our App Service
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and log in
 
