@@ -55,7 +55,7 @@ When you've completed this tutorial, you should expect to see this:
 
 <br/>
 
-### Section 2: Test Out the Bot Using Web Chat
+### Section 2: Test Out the Bot Using Web Chat 
 
 In addition to all the new services that were just created to support your new bot, the code template selected previously (Echo Bot) has also been built and deployed so we can interact with the bot right away even though we don't have any local code yet.
 
