@@ -3,7 +3,7 @@
 ### This guide will help you get going rich media cards so you can add some flare to your bot responses
 
 When you've completed this tutorial, you should expect to see this:
-<br/>...image forthcoming...
+<br/><img src="../screens/bot_framework_emulator_media_card.jpg" />
 
 ### What are [rich media cards](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp)?
 
@@ -40,4 +40,5 @@ Messages exchanged between user and bot can contain media attachments, such as i
 		break;
 	```
 
-	1. Still working on this section...
+1. Run this bot locally and test it out in the Bot Framework Emulator - you should be greeted by the bot with a video card
+<br/><img src="../screens/bot_framework_emulator_media_card.jpg" />
