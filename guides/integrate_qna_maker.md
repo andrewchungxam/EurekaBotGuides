@@ -167,6 +167,8 @@ Now that we have a working public endpoint, we can add enable one of the several
 
 	```
 
+	note - embedding the secret in javascript makes it easy for other developers to embed your bot in their pages. for best practices, you should [exchange the secret for a time-based token](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat?view=azure-bot-service-4.0#option-1---keep-your-secret-hidden-exchange-your-secret-for-a-token-and-generate-the-embed). it's a little bit more work but much more secure. 
+
 1. To get the URL that the `iframe` needs to point to, navigate to your Web App Bot in the Azure Portal
 
 1. Click on the __Channels__ section
