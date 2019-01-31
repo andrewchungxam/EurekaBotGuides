@@ -40,6 +40,8 @@ When you've completed this tutorial, you should expect to see this:
 	```
 
 1. Open the `Bot.cs` file and check out the code, specifically the `OnTurnAsync` method and the `TurnContext` object - this is where your bot gets the opportunity to determine the `ActivityType` and act accordingly (i.e. `Message`, `ConversationUpdate`, `EndConversation`, `Typing`, etc)
+	- this bot is considered a "single-turn" bot because it processes a single request and responds with an answer, like asking for the weather
+	- for "multi-turn" bots, check out [Waterfall Dialogs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0) that are specifically designed to handle multiple round trips to the user to gather the info necessary to complete the task at hand - this could be ordering a pizza, scheduling a Lyft ride, etc
 
 1. In VS Code, open the terminal (__Terminal > New Terminal__) and type `dotnet build` and ensure there are no build errors
 
