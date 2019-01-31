@@ -80,7 +80,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 1. In STEP 4, add some existing FAQs to populate your knowledge base with info from an online source using a URL or upload a document or spreadsheet containing this data
     - if you don't have existing data to import on hand, search online for a FAQ page from your company
     - fallback URL if needed: https://www.colorado.gov/pacific/dmv/faq-driver-license
-    - you can add more than 1 source of information into a single KB but should typically be grouped by topic (i.e. all FAQs related to DMV Registration)
+    - you can add more than 1 source of information into a single KB but should typically be grouped by topic (i.e. all FAQs related to DMV Licensing)
 
 1. You can optionally give your bot some personality but selecting one of the pre-defined personality types
     - Chit-chat will allow your bot to answer basic questions ("hello", "how are you?", etc) and interact with the user moderately
@@ -114,7 +114,8 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
    - the host URL to point towards
 
    You should have something like this - store them somewhere temporarily
-     - `KBID: bd264f91-30ea-452e-8480-f12cc50f123c`
-     - `Host: https://eurekaqna.azurewebsites.net/qnamaker`
-     - `Endpoint Key: 08504335-4c96-41c5-b8ff-39343ee6c6ff`
-
+     ```
+	 KBID: bd264f91-30ea-452e-8480-f12cc50f123c
+     Host: https://eurekaqna.azurewebsites.net/qnamaker
+     Endpoint Key: 08504335-4c96-41c5-b8ff-39343ee6c6ff
+	 ```
