@@ -115,7 +115,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 
    You should have something like this - store them somewhere temporarily
      ```
-	 KBID: bd264f91-30ea-452e-8480-f12cc50f123c
+	 KB ID: bd264f91-30ea-452e-8480-f12cc50f123c
      Host: https://eurekaqna.azurewebsites.net/qnamaker
      Endpoint Key: 08504335-4c96-41c5-b8ff-39343ee6c6ff
 	 ```
