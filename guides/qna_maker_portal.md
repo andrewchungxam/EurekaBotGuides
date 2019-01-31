@@ -75,7 +75,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 1. Select the __Azure QnA service__ you created in Section 1 above
 
 1. In STEP 3, give your new knowledge base a unique name
-<br/><img src="../screens/new_knowledge_base.jpg" width="60%" />
+<br/><img src="../screens/new_knowledge_base.jpg" width="80%" />
 
 1. In STEP 4, add some existing FAQs to populate your knowledge base with info from an online source using a URL or upload a document or spreadsheet containing this data
     - if you don't have existing data to import on hand, search online for a FAQ page from your company
