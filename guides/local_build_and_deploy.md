@@ -27,11 +27,12 @@ When you've completed this tutorial, you should expect to see this:
 
 1. In VS Code, open the project located at `src/start_here/EurekaBot` - this will be our baseline for our QnA bot
 
-1. Copy the .bot file in the bot source code you download in the previous step into the root of this project
+1. Copy the .bot file in the bot source code you downloaded from the portal in the previous step into the root of the cloned git project
     - the .bot file contains several configuration keys needed by the bot to run
+    - if you have trouble finding the file, sort the downloaded files by Type, it should be the only "Bot File"; also, Azure will have named this file whatever you named your bot
 
-1. In the `appsettings.json` file, specify the path to the `.bot` file you just copied over as well as the bot file secret
-    - you can find the bot file path and secret in the __Application settings__ of web bot in the Azure Portal
+1. In the `appsettings.json` file, you need to specify the path to the `.bot` file you just copied over as well as the bot file secret
+    - you can find the needed values (ie. the botFilePath and the botFileSecret) in the __Application settings__ of the web bot in the Azure Portal
 	<br/><img src="../screens/application_settings_bot_info.jpg" />
 	example:
 	```
@@ -39,14 +40,14 @@ When you've completed this tutorial, you should expect to see this:
 	"botFileSecret": "RLhkzCUeiwHGluudy7Ny5SGEzaVmHkalBRJXSGECVM=",
 	```
 
-1. Open the `Bot.cs` file and check out the code, specifically the `OnTurnAsync` method and the `TurnContext` object - this is where your bot gets the opportunity to determine the `ActivityType` and act accordingly (i.e. `Message`, `ConversationUpdate`, `EndConversation`, `Typing`, etc)
+1. Now that we've sorted out some of the configuration issues, let's look at the code.  Open the `Bot.cs` file and check out the code, specifically the `OnTurnAsync` method and the `TurnContext` object - this is where your bot gets the opportunity to determine the `ActivityType` and act accordingly (i.e. `Message`, `ConversationUpdate`, `EndConversation`, `Typing`, etc)
 	- this bot is considered a "single-turn" bot because it processes a single request and responds with an answer, like asking for the weather
 	- for "multi-turn" bots, check out [Waterfall Dialogs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-dialog-manage-conversation-flow?view=azure-bot-service-4.0) that are specifically designed to handle multiple round trips to the user to gather the info necessary to complete the task at hand - this could be ordering a pizza, scheduling a Lyft ride, etc
 
 1. In VS Code, open the terminal (__Terminal > New Terminal__) and type `dotnet build` and ensure there are no build errors
 
 1. Type `F5` to start debugging the bot endpoint locally and look for the `localhost` endpoint in the console output - it should be something similar to `http://localhost:3897`
-
+	- if you only see Node.js, you may need to download the C# extension
 1. Open the Bot Framework Emulator and click the __Open Bot__ button, then select the .bot file in your project
 
 1. Enter the bot file secret from the `appsettings.json` file and paste it to allow the emulator to read the configuration settings, click __Submit__
@@ -61,8 +62,10 @@ When you've completed this tutorial, you should expect to see this:
 ### Section 2: Configure CI/CD to Deploy on Commit
 
 1. In the online repository option of your choice, create a new repository to host the source code for this project
+	- note, if you originally forked this repo instead of cloning it, you'll need to create a new project as the automated build configuration steps below require the Bot code be at the root directory 
 
-1. Commit and push the project source code of root of this project to the `master` branch
+1. Commit and push the project source code to the `master` branch. For clarity, the folder you are pushing to your git repo should look something like this:
+<br/><img src="https://user-images.githubusercontent.com/3628580/52171926-951c8380-2733-11e9-9a7f-84aec18038b6.png" />
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and log in
 
