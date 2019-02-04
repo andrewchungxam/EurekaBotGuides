@@ -27,7 +27,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 1. Click the __Create__ button at the bottom
 <br/><img src="../screens/new_qna_maker_service.jpg" width="60%" />
 
-1. Enter a unique value for the __QnA Maker Service__
+1. Enter a unique name for the __QnA Maker Service__
 	
 1. Select the __Subscription__ under which this bot will reside
 
@@ -79,7 +79,7 @@ Azure's QnA Maker service makes it easy to import existing knowledge base data (
 
 1. In STEP 4, add some existing FAQs to populate your knowledge base with info from an online source using a URL or upload a document or spreadsheet containing this data
     - if you don't have existing data to import on hand, search online for a FAQ page from your company
-    - fallback URL if needed: https://www.colorado.gov/pacific/dmv/faq-driver-license
+    - fallback URL if needed: https://www.colorado.gov/pacific/dmv/faqs-registration
     - you can add more than 1 source of information into a single KB but should typically be grouped by topic (i.e. all FAQs related to DMV Licensing)
 
 1. You can optionally give your bot some personality but selecting one of the pre-defined personality types
